@@ -20,7 +20,7 @@ install:
 
 install-resty:
 	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET; $(CC) $(CFLAGS) $(LIB_OPTION) -o src/lfs.so $(OBJS) 
-	cp src/lfs.so $(OPENRESTY)/lualib
+	cp src/lfs.so $(OPENRESTY_HOME)/lualib
 
 
 clean:
